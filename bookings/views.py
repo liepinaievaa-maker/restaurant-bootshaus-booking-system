@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User
 from .forms import BookingForm
 
 
@@ -18,7 +19,7 @@ def create_booking(request):
         form = BookingForm(request.POST)
         if form.is_valid():
             booking = form.save(commit=False)
-            booking.user = request.user
+            booking.user = User.objects.first()
             booking.save()
             return render(request, 'bookings/success.html')
     else:

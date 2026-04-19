@@ -17,3 +17,8 @@ class BookingForm(forms.ModelForm):
             'guests',
             'special_request',
         ]
+
+        widgets = {
+            'booking_date': forms.DateInput(attrs={'type': 'date'}),
+            'booking_time': forms.TimeInput(attrs={'type': 'time'}),
+        }
