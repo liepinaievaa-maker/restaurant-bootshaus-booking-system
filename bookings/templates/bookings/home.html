@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Bootshaus</title>
-</head>
-<body>
+{% extends 'bookings/base.html' %}
+
+{% block content %}
     <h1>Welcome to Bootshaus Restaurant</h1>
     <p>Your booking system is working.</p>
 
     <a href="{% url 'create_booking' %}">Book a Table</a>
-</body>
-</html>
+{% endblock %}

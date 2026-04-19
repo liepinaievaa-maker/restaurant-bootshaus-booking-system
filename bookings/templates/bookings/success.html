@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Booking Success</title>
-</head>
-<body>
+{% extends 'bookings/base.html' %}
+
+{% block content %}
     <h1>Booking Successful!</h1>
     <p>Your table has been booked.</p>
-    <a href="/">Return to homepage</a>
-</body>
-</html>
+    <a href="{% url 'home' %}">Return to homepage</a>
+{% endblock %}

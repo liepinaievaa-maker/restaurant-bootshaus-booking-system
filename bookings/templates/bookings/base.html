@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootshaus</title>
+</head>
+<body>
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'create_booking' %}">Book a Table</a> |
+    </nav>
+
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
