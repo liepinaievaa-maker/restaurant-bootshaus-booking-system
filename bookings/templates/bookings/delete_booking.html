@@ -1,0 +1,19 @@
+{% extends 'bookings/base.html' %}
+
+{% block content %}
+    <h1>Delete Booking</h1>
+
+    <p>Are you sure you want to delete this booking?</p>
+
+    <p>
+        {{ booking.booking_date }} at {{ booking.booking_time }} 
+        for {{ booking.guests }} guests
+    </p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Yes, delete</button>
+    </form>
+
+    <a href="{% url 'my_bookings' %}">Cancel</a>
+{% endblock %}
