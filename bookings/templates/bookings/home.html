@@ -1,8 +1,40 @@
 {% extends 'bookings/base.html' %}
+{% load static %}
 
 {% block content %}
-    <h1>Welcome to Bootshaus Restaurant</h1>
-    <p>Your booking system is working.</p>
 
-    <a href="{% url 'create_booking' %}">Book a Table</a>
+<div class="text-center mb-4">
+    <h1 class="display-4">Bootshaus Restaurant</h1>
+    <p class="lead">Experience great food and atmosphere</p>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'images/restaurant.jpeg' %}" class="img-fluid rounded" alt="Restaurant">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'images/bootshaus.jpeg' %}" class="img-fluid rounded" alt="Bootshaus Restaurant">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'images/food.jpeg' %}" class="img-fluid rounded" alt="Food">
+        </div>
+        <div class="col-md-4 mb-4">
+        <img src="{% static 'images/menu.jpeg' %}" class="img-fluid rounded" alt="Menu">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'images/view.jpeg' %}" class="img-fluid rounded" alt="View from the restaurant">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{% static 'images/vogelnest.jpeg' %}" class="img-fluid rounded" alt="Birds Nest">
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a href="{% url 'create_booking' %}" class="btn btn-primary btn-lg">
+        Book a Table
+    </a>
+</div>
 {% endblock %}
