@@ -10,6 +10,8 @@
         <a href="{% url 'create_booking' %}">Book a Table</a> |
 
         {% if user.is_authenticated %}
+            <a href="{% url 'my_bookings' %}">My Bookings</a> |
+            
             <form action="{% url 'logout' %}" method="POST" style="display:inline;">
                 {% csrf_token %}
                 <button type="submit">Logout</button>
