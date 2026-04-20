@@ -2,6 +2,12 @@
 
 {% block content %}
 
+{% if form.errors %}
+    <div class="alert alert-danger">
+        {{ form.errors }}
+    </div>
+{% endif %}
+
 <div class="row justify-content-center">
     <div class="col-md-6">
 
@@ -23,16 +29,25 @@
             <div class="mb-3">
                 <label class="form-label">Date</label>
                 {{ form.booking_date }}
+                <div class="text-danger">
+                    {{ form.booking_date.errors }}
+                </div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Time</label>
                 {{ form.booking_time }}
+                <div class="text-danger">
+                    {{ form.booking_time.errors }}
+                </div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Guests</label>
                 {{ form.guests }}
+                <div class="text-danger">
+                    {{ form.guests.errors }}
+                </div>
             </div>
 
             <div class="mb-3">
