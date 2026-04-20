@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from .forms import BookingForm
 from .models import Booking
+from django.contrib import messages
 
 
 # Create your views here.
@@ -23,7 +24,10 @@ def create_booking(request):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
-            return render(request, 'bookings/success.html')
+
+            messages.success(request, "Your booking has been created successfully.")
+            return redirect('my_bookings')
+
     else:
         form = BookingForm()
 
@@ -52,6 +56,7 @@ def edit_booking(request, booking_id):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, "Your booking has been updated.")
             return redirect('my_bookings')
     else:
         form = BookingForm(instance=booking)
@@ -68,6 +73,7 @@ def delete_booking(request, booking_id):
 
     if request.method == 'POST':
         booking.delete()
+        messages.success(request, "Your booking has been deleted.")
         return redirect('my_bookings')
 
     return render(
