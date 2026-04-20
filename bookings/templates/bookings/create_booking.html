@@ -1,11 +1,51 @@
 {% extends 'bookings/base.html' %}
 
 {% block content %}
-    <h1>Create a Booking</h1>
 
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Book Table</button>
-    </form>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+
+        <h1 class="mb-4 text-center">Book a Table</h1>
+
+        <form method="POST" class="card p-4 shadow">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                {{ form.full_name }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                {{ form.email }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Date</label>
+                {{ form.booking_date }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Time</label>
+                {{ form.booking_time }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Guests</label>
+                {{ form.guests }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Special Request</label>
+                {{ form.special_request }}
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">
+                Book Table
+            </button>
+
+        </form>
+
+    </div>
+</div>
 {% endblock %}
