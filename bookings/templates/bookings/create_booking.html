@@ -2,50 +2,56 @@
 
 {% block content %}
 
-{% if form.errors %}
-    <div class="alert alert-danger">
-        {{ form.errors }}
-    </div>
-{% endif %}
-
 <div class="row justify-content-center">
     <div class="col-md-6">
 
         <h1 class="mb-4 text-center">Book a Table</h1>
 
+        <p class="text-muted text-center">
+            We accept bookings every hour from 12:00 to 21:00. <br>
+            Each time slot can host up to 3 tables, <br>
+            with bookings available for 1 to 10 guests.
+        </p>
+
         <form method="POST" class="card p-4 shadow">
             {% csrf_token %}
+
+            {% if form.non_field_errors %}
+                <div class="alert alert-danger">
+                    {% for error in form.non_field_errors %}
+                        <p class="mb-0">{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
 
             <div class="mb-3">
                 <label class="form-label">Full Name</label>
                 {{ form.full_name }}
+                <div class="text-danger small">{{ form.full_name.errors }}</div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Email</label>
                 {{ form.email }}
+                <div class="text-danger small">{{ form.email.errors }}</div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Date</label>
                 {{ form.booking_date }}
-                <div class="text-danger">
-                    {{ form.booking_date.errors }}
-                </div>
+                <div class="text-danger small">{{ form.booking_date.errors }}</div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Time</label>
                 {{ form.booking_time }}
-                <div class="text-danger">
-                    {{ form.booking_time.errors }}
-                </div>
+                <div class="text-danger small">{{ form.booking_time.errors }}</div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Guests</label>
                 {{ form.guests }}
-                <div class="text-danger">
+                <div class="text-danger small">
                     {{ form.guests.errors }}
                 </div>
             </div>
@@ -53,6 +59,7 @@
             <div class="mb-3">
                 <label class="form-label">Special Request</label>
                 {{ form.special_request }}
+                <div class="text-danger small">{{ form.special_request.errors }}</div>
             </div>
 
             <button type="submit" class="btn btn-primary w-100">
