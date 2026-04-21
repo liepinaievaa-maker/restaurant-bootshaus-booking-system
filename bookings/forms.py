@@ -40,10 +40,12 @@ class BookingForm(forms.ModelForm):
 
         widgets = {
             'full_name': forms.TextInput(
-                attrs={'class': 'form-control'}
+                attrs={'class': 'form-control',
+                       'placeholder': 'John Smith'}
             ),
             'email': forms.EmailInput(
-                attrs={'class': 'form-control'}
+                attrs={'class': 'form-control',
+                       'placeholder': 'john@example.com'}
             ),
             'booking_date': forms.DateInput(
                 attrs={'class': 'form-control', 'type': 'date'}
@@ -94,3 +96,16 @@ class BookingForm(forms.ModelForm):
                 )
 
         return cleaned_data
+
+    def clean_full_name(self):
+        full_name = self.cleaned_data.get('full_name')
+
+        if full_name:
+            parts = full_name.strip().split()
+
+        if len(parts) < 2:
+            raise forms.ValidationError(
+                "Please enter your full name (first and last name)."
+            )
+
+        return full_name
