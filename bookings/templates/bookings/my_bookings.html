@@ -17,7 +17,7 @@
         {% for booking in bookings %}
         <tr>
             <td>{{ booking.booking_date }}</td>
-            <td>{{ booking.booking_time }}</td>
+            <td>{{ booking.booking_time|time:"H:i" }}</td>
             <td>{{ booking.guests }}</td>
             <td>
                 <a href="{% url 'edit_booking' booking.id %}" class="btn btn-sm btn-warning">
