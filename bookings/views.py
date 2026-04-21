@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import BookingForm
 from .models import Booking
 from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm
 
 
 # Create your views here.
@@ -81,3 +82,27 @@ def delete_booking(request, booking_id):
         'bookings/delete_booking.html',
         {'booking': booking}
     )
+
+
+def signup(request):
+    """
+    View for user registration.
+    """
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request,
+                "Your account has been created successfully. "
+                "You can now log in."
+            )
+            return redirect('login')
+    else:
+        form = UserCreationForm()
+
+    form.fields['username'].widget.attrs.update({'class': 'form-control'})
+    form.fields['password1'].widget.attrs.update({'class': 'form-control'})
+    form.fields['password2'].widget.attrs.update({'class': 'form-control'})
+
+    return render(request, 'registration/signup.html', {'form': form})

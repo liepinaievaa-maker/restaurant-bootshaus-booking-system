@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from bookings.views import (
-    home, create_booking, my_bookings, edit_booking, delete_booking
+    home, create_booking, my_bookings, edit_booking, delete_booking, signup
 )
 
 urlpatterns = [
@@ -32,4 +32,5 @@ urlpatterns = [
         delete_booking,
         name='delete_booking'
     ),
+    path('accounts/signup/', signup, name='signup'),
 ]
