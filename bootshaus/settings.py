@@ -29,7 +29,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'restaurant-bootshaus.herokuapp.com',
+    'restaurant-bootshaus-af7c610c2e01.herokuapp.com/',
     ]
 
 CSRF_TRUSTED_ORIGINS = [
