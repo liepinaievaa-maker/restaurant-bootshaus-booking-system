@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
-from .forms import BookingForm
+from .forms import BookingForm, ContactForm
 from .models import Booking
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
@@ -106,3 +106,19 @@ def signup(request):
     form.fields['password2'].widget.attrs.update({'class': 'form-control'})
 
     return render(request, 'registration/signup.html', {'form': form})
+
+
+def contact(request):
+    """
+    View for contact page.
+    """
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Your message has been sent successfully.")
+            return redirect('contact')
+    else:
+        form = ContactForm()
+
+    return render(request, 'bookings/contact.html', {'form': form})

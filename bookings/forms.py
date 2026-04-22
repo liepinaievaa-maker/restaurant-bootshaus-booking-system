@@ -1,6 +1,6 @@
 from django import forms
 from datetime import date, time
-from .models import Booking
+from .models import Booking, ContactRequest
 
 TIME_SLOT_CHOICES = [
     (time(12, 0), '12:00'),
@@ -109,3 +109,29 @@ class BookingForm(forms.ModelForm):
             )
 
         return full_name
+
+
+class ContactForm(forms.ModelForm):
+    """
+    Form for contact messages.
+    """
+
+    class Meta:
+        model = ContactRequest
+        fields = ['full_name', 'email', 'message']
+
+        widgets = {
+            'full_name': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'John Smith'
+            }),
+            'email': forms.EmailInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'name@example.com'
+            }),
+            'message': forms.Textarea(attrs={
+                'class': 'form-control',
+                'rows': 5,
+                'placeholder': 'Write your message here...'
+            }),
+        }

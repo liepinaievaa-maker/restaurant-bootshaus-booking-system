@@ -34,3 +34,17 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.full_name} - {self.booking_date} at {self.booking_time}"
+
+
+class ContactRequest(models.Model):
+    """
+    Model for storing contact messages from users.
+    """
+
+    full_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.full_name} - {self.email}"

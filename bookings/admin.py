@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Booking
+from .models import Booking, ContactRequest
 
 
 # Register your models here.
@@ -17,4 +17,14 @@ class BookingAdmin(admin.ModelAdmin):
         'status',
     )
     list_filter = ('status', 'booking_date')
+    search_fields = ('full_name', 'email')
+
+
+@admin.register(ContactRequest)
+class ContactRequestAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for contact requests.
+    """
+
+    list_display = ('full_name', 'email', 'created_on')
     search_fields = ('full_name', 'email')
