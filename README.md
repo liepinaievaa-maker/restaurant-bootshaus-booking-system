@@ -9,3 +9,17 @@
  - The application also provides a contact form, allowing visitors to send inquiries directly to the restaurant.
 
  - The project was built using Django and deployed on Heroku.
+
+## User Experience (UX)
+
+### Target Audience
+
+### User Goals
+
+### Site Owner Goals
+
+### User Stories
+
+#### As a user, I want to:
+
+#### As a site owner, I want to:
