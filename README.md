@@ -10,6 +10,10 @@
 
  - The project was built using Django and deployed on Heroku.
 
+<br>
+
+ - [Here is a link to my deployment](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
+
 ## User Experience (UX)
 
 ### Target Audience
@@ -123,3 +127,43 @@
 
 - Built with Bootstrap for responsive layout
 - Works across different screen sizes
+
+## Technologies Used
+
+### Languages
+
+- Python
+- HTML
+- CSS
+
+### Frameworks and Libraries
+
+- [Django](https://www.djangoproject.com/) – Web framework used to build the application
+Bootstrap – Used for styling and responsive design
+
+### Database
+
+- SQLite (development)
+- PostgreSQL (production on Heroku)
+- WhiteNoise – For serving static files in production
+
+### Tools and Platforms
+
+- [Git](https://git-scm.com/) – Version control
+- [GitHub](https://github.com/) – Code repository and project board
+- [Heroku](https://www.heroku.com/) – Deployment platform
+- [Visual Studio Code](https://code.visualstudio.com/) – Development environment
+
+### Other Technologies
+
+- Django Messages Framework – For displaying success and error messages
+- Django Authentication System – For user login, logout, and registration
+
+### Future Features
+
+- Add review system for customers  
+- Improve booking system with table selection  
+- Add email notifications for bookings  
+- Enhance admin controls for reservation management  
+
+## Testing
