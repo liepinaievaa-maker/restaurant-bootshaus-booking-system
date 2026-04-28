@@ -167,3 +167,104 @@ Bootstrap – Used for styling and responsive design
 - Enhance admin controls for reservation management  
 
 ## Testing
+
+### Automated Testing
+
+Automated tests were created using Django's built-in testing framework.
+
+The tests cover:
+
+- Valid booking form submission
+- Full name validation
+- Guest number validation
+- Past date validation
+- Booking slot limit validation
+- Login protection for the booking page
+
+All automated tests passed.
+
+To run the tests, the following command was used:
+
+python manage.py test
+
+All tests ran successfully with the following result:
+    - Ran 6 tests in Xs
+
+    - OK
+
+
+### Manual Testing
+
+|Feature|Test|Expected Result|Actual Result|Pass/Fail|
+|---------|------|------------------|--------------|-----------|
+| Navigation | Click Home link | User is taken to homepage | Works as expected | Pass |
+| Navigation | Click Book link while logged out | User is redirected to login page | Works as expected | Pass |
+| Registration | Submit valid registration form | Account is created successfully | Works as expected | Pass |
+| Registration | Submit mismatched passwords | Error message is displayed | Works as expected | Pass |
+| Login | Log in with valid credentials | User is logged in | Works as expected | Pass |
+| Logout | Click logout button | User is logged out | Works as expected | Pass |
+| Create Booking | Submit valid booking form | Booking is created and saved | Works as expected | Pass |
+| Create Booking | Submit booking with past date | Error message is displayed | Works as expected | Pass |
+| Create Booking | Submit booking with one name only | Error message is displayed | Works as expected | Pass |
+| Create Booking | Submit booking with more than 10 guests | Error message is displayed | Works as expected | Pass |
+| Booking Availability | Try to create fourth booking for same time slot | Booking is rejected with availability message | Works as expected | Pass |
+| My Bookings | View bookings while logged in | User sees only their own bookings | Works as expected | Pass |
+| Edit Booking | Update an existing booking | Booking details are updated | Works as expected | Pass |
+| Delete Booking | Delete an existing booking | Booking is removed from list | Works as expected | Pass |
+| Contact Form | Submit valid contact form | Message is saved and success message shown | Works as expected | Pass |
+| Admin Panel | Log in as superuser | Admin can view bookings and contact messages | Works as expected | Pass |
+| Responsiveness | View pages on different screen sizes | Layout remains usable and responsive | Works as expected | Pass |
+| Deployment | Open deployed Heroku site | Live site loads correctly | Works as expected | Pass |
+
+### Bugs
+
+- Minor UI issues were identified and resolved during testing  
+- No major bugs remain at the time of submission  
+
+## Deployment
+
+- The project was deployed using Heroku.
+
+#### Deployment Steps
+1. The project was developed locally using VS Code.
+2. All dependencies were added to requirements.txt.
+3. A Procfile was created to run the application using Gunicorn.
+4. Static files were configured using WhiteNoise.
+5. Environment variables such as SECRET_KEY and DEBUG were set in Heroku Config Vars.
+6. The Heroku app was connected to the GitHub repository.
+7. The project was deployed using the Heroku Deploy Branch option.
+8. Database migrations were applied using the Heroku console.
+9. A superuser was created for admin access.
+
+The live application can be accessed here:
+
+ - [Here is a link to my deployment](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
+
+## Local Deployment
+
+- To run this project locally:
+
+<br>
+
+1. Clone the repository:
+- git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+2. Navigate into the project folder:
+- cd YOUR-REPO-NAME
+3. Create a virtual environment:
+- python -m venv venv
+4. Activate the virtual environment:
+- venv\Scripts\activate
+5. Install dependencies:
+- pip install -r requirements.txt
+6. Run migrations:
+- python manage.py migrate
+7. Start the development server:
+- python manage.py runserver
+
+## Credits
+
+### Content
+
+All project content was created by the developer.
+
+### Code
