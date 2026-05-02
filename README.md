@@ -186,6 +186,7 @@ Wireframes were created during planning to guide the structure of the main pages
 
 - Built with Bootstrap for responsive layout
 - Works across different screen sizes
+- The website was tested using browser developer tools at mobile, tablet, and desktop screen sizs. Bootstrap grid classes and responsive navigation were used to ensure the layout adapts across devices. The homepage image gallery stacks on smaller screens, the navigation collapses into a mobilemenu, and booking tables remain usable through responsive table wrappig.
 
 ## Data Model
 

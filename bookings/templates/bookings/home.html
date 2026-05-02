@@ -5,29 +5,35 @@
 
 <div class="text-center mb-4">
     <h1 class="display-4">Bootshaus Restaurant</h1>
-    <p class="lead">Experience great food and atmosphere</p>
+    <p class="lead text-center">A simple online reservation system for booking tables at Bootshaus Restaurant.</p>
+</div>
+
+<div class="text-center mb-4">
+    <a href="{% url 'create_booking' %}" class="btn btn-primary btn-lg">
+        Make a Reservation
+    </a>
 </div>
 
 <div class="container">
     <div class="row">
 
         <div class="col-md-4 mb-4">
-            <img src="{% static 'images/restaurant.jpeg' %}" class="img-fluid rounded" alt="Restaurant">
+            <img src="{% static 'images/restaurant.jpeg' %}" class="img-fluid rounded home-image" alt="Restaurant">
         </div>
         <div class="col-md-4 mb-4">
-            <img src="{% static 'images/bootshaus.jpeg' %}" class="img-fluid rounded" alt="Bootshaus Restaurant">
+            <img src="{% static 'images/bootshaus.jpeg' %}" class="img-fluid rounded home-image" alt="Bootshaus Restaurant">
         </div>
         <div class="col-md-4 mb-4">
-            <img src="{% static 'images/food.jpeg' %}" class="img-fluid rounded" alt="Food">
+            <img src="{% static 'images/food.jpeg' %}" class="img-fluid rounded home-image" alt="Food">
         </div>
         <div class="col-md-4 mb-4">
-        <img src="{% static 'images/menu.jpeg' %}" class="img-fluid rounded" alt="Menu">
+        <img src="{% static 'images/menu.jpeg' %}" class="img-fluid rounded home-image" alt="Menu">
         </div>
         <div class="col-md-4 mb-4">
-            <img src="{% static 'images/view.jpeg' %}" class="img-fluid rounded" alt="View from the restaurant">
+            <img src="{% static 'images/view.jpeg' %}" class="img-fluid rounded home-image" alt="View from the restaurant">
         </div>
         <div class="col-md-4 mb-4">
-            <img src="{% static 'images/vogelnest.jpeg' %}" class="img-fluid rounded" alt="Birds Nest">
+            <img src="{% static 'images/vogelnest.jpeg' %}" class="img-fluid rounded home-image" alt="Birds Nest">
         </div>
     </div>
 </div>
