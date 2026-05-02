@@ -48,6 +48,7 @@ All tests ran successfully with the following result:
 
 ## Code Validation
 
+### Python Validation
 
 - Python docstrings were written with reference to [PEP257](https://peps.python.org/pep-0257/).
 
@@ -93,6 +94,8 @@ Screenshots of validation results are included below.
 
 ---
 
+### HTML Validation 
+
 - HTML pages were checked using the [W3C HTML Validator](https://validator.w3.org/).
 
 Pages tested:
@@ -110,6 +113,19 @@ Pages tested:
 ![HTML Sign Up Form Testing](documenation/html-testing-sign-up-form.PNG)
 
 ---
+
+### CSS Validation
+
+Custom CSS was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) by direct input.
+
+The CSS code was pasted into the validator to ensure only custom styles were checked.
+
+No errors were found in the custom CSS.
+
+Bootstrap CSS was not validated, as it is an external library.
+
+![CSS Testing](documenation/css-testing.PNG)
+
 
 ### Bugs
 
