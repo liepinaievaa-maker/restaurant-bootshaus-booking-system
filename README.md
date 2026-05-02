@@ -14,6 +14,20 @@
 
  - [Here is a link to my deployment](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
 
+## Table of Contents
+- Project Overview
+- User Experience
+- Agile Development
+- Design
+- Features
+- Data Model
+- Technologies Used
+- Testing
+- Bugs
+- Deployment
+- Credits
+- Acknowledgements
+
 ## User Experience (UX)
 
 ### Target Audience
@@ -61,6 +75,50 @@
  - Manage customer reservations
  - Receive contact messages from users
 
+## Agile Development
+
+This project was planned and managed using GitHub Projects. The board was organised using Epics, User Stories, and Tasks.
+
+The workflow columns used were:
+- Backlog
+- To Do
+- In Progress
+- Done
+
+Epics were created for:
+- User Authentication
+- Booking Management
+- User Interface and Navigation
+- Admin Management
+- Testing and Documentation
+
+Each user story included acceptance criteria and was broken down into smaller implementation tasks.
+
+## Design
+
+### Colour Scheme
+
+- The site uses a dark navigation bar with light buttons and neutral Bootstrap styling to create a clean restaurant-style interface. The design keeps the focus on booking functionality and restaurant imagery.
+
+### Typography
+
+- The project uses default Bootstrap typography to maintain readability and consistency across pages.
+
+### Imagery
+
+- Restaurant images are used on the homepage to create a welcoming first impression and show the atmosphere of the restaurant.
+
+### Wireframes
+
+Wireframes were created during planning to guide the structure of the main pages:
+- Homepage
+- Booking form
+- My Bookings page
+- Contact page
+
+### Responsive Design Testing
+
+- The application was tested on different screen sizes using browser developer tools. The layout remained usable on mobile, tablet, and desktop screens.
 
 ## Features
 
@@ -128,6 +186,34 @@
 
 - Built with Bootstrap for responsive layout
 - Works across different screen sizes
+
+## Data Model
+
+### Booking Model
+
+The Booking model stores restaurant reservations made by registered users.
+
+Fields:
+- user: ForeignKey connected to Django User model
+- full_name: customer full name
+- email: customer email
+- booking_date: date of reservation
+- booking_time: selected hourly time slot
+- guests: number of guests
+- special_request: optional customer request
+- status: booking status
+- created_on: date and time booking was created
+
+### ContactRequest Model
+
+The ContactRequest model stores messages submitted through the contact form.
+
+Fields:
+- full_name
+- email
+- message
+- created_on
+
 
 ## Technologies Used
 
