@@ -75,26 +75,37 @@
  - Manage customer reservations
  - Receive contact messages from users
 
-![User stories in GitHub](documenation/Board.PNG)
 
 ## Agile Development
 
-This project was planned and managed using GitHub Projects. The board was organised using Epics, User Stories, and Tasks.
+This project was planned and managed using GitHub Projects following Agile methodology. 
 
-The workflow columns used were:
+The Kanban board was used to organise development into the following coumns:
+
 - Backlog
 - To Do
 - In Progress
 - Done
 
-Epics were created for:
-- User Authentication
-- Booking Management
-- User Interface and Navigation
-- Admin Management
-- Testing and Documentation
+The project was structured using:
 
-Each user story included acceptance criteria and was broken down into smaller implementation tasks.
+- Epics (high-level features);
+- User Stories (user-focused requirements)
+- Tasks (implementation steps)
+
+Each user story included acceptance criteria and was broken down into smaller implementation tasks for development.
+
+Due to the iterative nature of the project, not all user stories were completed at first, but the most important features were prioritised and completed within the project timeframe, as well the other tasks. All together I had about 40 User stories and tasks.
+
+Screenshots below show examples of the project board, user stories, and task progression throughout development. 
+
+![User stories in GitHub](documenation/Board.PNG)
+
+![User stories edit bokking](documenation/user-story-edit-booking.PNG)
+
+![User stories register user](documenation/user-story-register-account.PNG)
+
+![Task guest number validation](documenation/task-guest-number-validation.PNG)
 
 ## Design
 
