@@ -345,19 +345,26 @@ All tests ran successfully with the following result:
 - HTML pages were checked using the [W3C HTML Validator](https://validator.w3.org/).
 
 ![HTML Home Page testing](documenation/html-testing-home-page.PNG)
-![HTML Home Page testing](documenation/html-testing-account.PNG)
-![HTML Home Page testing](documenation/html-testing-contact-form.PNG)
+![HTML Log Inn testing](documenation/html-testing-account.PNG)
+![HTML Contact Form Testing](documenation/html-testing-contact-form.PNG)
+![HTML Sign Up Form Testing](documenation/html-testing-sign-up-form.PNG)
+
 
 
 
 ### Bugs
 
-- Minor UI issues were identified and resolved during testing  
-- No major bugs remain at the time of submission  
+#### Fixed Bugs
 
-## Deployment
+- HTML validation errors were identified on the signup page where `aria-describedby` attributes referenced non-existent elements. This was resolved by adding corresponding help text elements with matching IDs.
 
-- The project was deployed using Heroku.
+- Additional HTML validation errors were found due to incorrectly nested and unclosed `<form>` and `<div>` elements. These were fixed by restructuring the template to ensure proper opening and closing of tags.
+
+- Layout issues were identified on mobile devices where elements were not properly aligned. These were resolved by using Bootstrap grid classes and container structure.
+
+#### Remaining Bugs
+
+- No major bugs remain at the time of submission.
 
 #### Deployment Steps
 1. The project was developed locally using VS Code.
