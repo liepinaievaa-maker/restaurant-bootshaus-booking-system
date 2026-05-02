@@ -213,3 +213,5 @@ __marimo__/
 
 # OS files
 .DS_Store
+
+db.sqlite3
