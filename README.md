@@ -344,7 +344,9 @@ All tests ran successfully with the following result:
 
 - HTML pages were checked using the [W3C HTML Validator](https://validator.w3.org/).
 
-(here comes the screenshots)
+![HTML Home Page testing](documenation/html-testing-home-page.PNG)
+![HTML Home Page testing](documenation/html-testing-account.PNG)
+![HTML Home Page testing](documenation/html-testing-contact-form.PNG)
 
 
 
