@@ -26,7 +26,8 @@ def create_booking(request):
             booking.user = request.user
             booking.save()
 
-            messages.success(request, "Your booking has been created successfully.")
+            messages.success(request,
+                             "Your booking has been created successfully.")
             return redirect('my_bookings')
 
     else:
@@ -116,7 +117,8 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, "Your message has been sent successfully.")
+            messages.success(request,
+                             "Your message has been sent successfully.")
             return redirect('contact')
     else:
         form = ContactForm()
