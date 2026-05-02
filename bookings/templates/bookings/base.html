@@ -37,7 +37,7 @@
                 {% if user.is_authenticated %}
                     <a class="nav-link" href="{% url 'my_bookings' %}">My Bookings</a>
 
-                    <form action="{% url 'logout' %}" method="POST" class="d-lg-inline mt-2 mt-lg-0">
+                    <form action="{% url 'logout' %}" method="POST" class="d-lg-inline mt-1 mt-lg-0">
                         {% csrf_token %}
                         <button class="btn btn-outline-light btn-sm ms-lg-2" type="submit">
                             Logout
