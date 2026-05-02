@@ -123,7 +123,7 @@ Screenshots below show examples of the project board, user stories, and task pro
 
 ### Colour Scheme
 
-- The site uses a dark navigation bar with light buttons and neutral Bootstrap styling to create a clean restaurant-style interface. The design keeps the focus on booking functionality and restaurant imagery.
+- The colour scheme is based on Bootstrap’s default styling combined with a dark navigation theme.
 
 The used colour scheme:
 
@@ -140,9 +140,11 @@ The used colour scheme:
 - Success messages
 #198754
 
+- The palette creates a clean and modern interface while maintaining strong contrast and readability.
+
 ![My color Palette](documenation/color-pallete.PNG)
 
--To Create Color palete I used [Coolors Website](https://coolors.co/0d6efd-212529-ffffff-dc3545-198754)
+- To Create Color palete developer used [Coolors Website](https://coolors.co/0d6efd-212529-ffffff-dc3545-198754)
 
 ### Typography
 
