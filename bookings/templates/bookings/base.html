@@ -53,13 +53,6 @@
     </div>
 </nav>
 
-<main class="flex-grow-1">
-    <div class="container mt-5">
-        {% block content %}
-        {% endblock %}
-    </div>
-</main>
-
 {% if messages %}
     <div class="container mt-3">
         {% for message in messages %}
@@ -70,6 +63,13 @@
         {% endfor %}
     </div>
 {% endif %}
+
+<main class="flex-grow-1">
+    <div class="container mt-5">
+        {% block content %}
+        {% endblock %}
+    </div>
+</main>
 
     <hr>
 
