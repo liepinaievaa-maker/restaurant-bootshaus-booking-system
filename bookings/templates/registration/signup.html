@@ -3,10 +3,12 @@
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-12 col-md-8 col-lg-6">
+
         <h1 class="mb-4 text-center">Sign Up</h1>
 
         <form method="POST" class="card p-4 shadow">
             {% csrf_token %}
+
             {% if form.non_field_errors %}
                 <div class="alert alert-danger">
                     {{ form.non_field_errors }}
@@ -18,7 +20,7 @@
                 {{ form.username }}
 
                 <div id="id_username_helptext" class="form-text">
-                    Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.
+                    Required. 150 characters or fewer.
                 </div>
 
                 <div class="text-danger small mt-1">
@@ -51,14 +53,15 @@
                     {{ form.password2.errors }}
                 </div>
             </div>
-</div>
 
             <div class="text-center mt-4">
                 <button type="submit" class="btn btn-primary px-4">
                     Create Account
                 </button>
             </div>
+
         </form>
+        
     </div>
 </div>
 {% endblock %}
