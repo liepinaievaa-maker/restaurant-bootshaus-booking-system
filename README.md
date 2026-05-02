@@ -140,6 +140,9 @@
 
 - [Django](https://www.djangoproject.com/) – Web framework used to build the application
 Bootstrap – Used for styling and responsive design
+- [Bootstrap](https://getbootstrap.com/) – Used for styling and responsive design
+- [WhiteNoise](https://whitenoise.readthedocs.io/) – Used to serve static files in production
+- [Gunicorn](https://gunicorn.org/) – WSGI server used for deployment
 
 ### Database
 
