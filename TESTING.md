@@ -1,6 +1,8 @@
 ### Automated Testing
 
-Automated tests were created using Django's built-in testing framework.
+- Testing included a combination of automated testing, manual testing, and code validation to ensure functionality, usability, and code quality.
+
+- Automated tests were created using Django's built-in testing framework.
 
 The tests cover:
 
@@ -122,10 +124,19 @@ The CSS code was pasted into the validator to ensure only custom styles were che
 
 No errors were found in the custom CSS.
 
-Bootstrap CSS was not validated, as it is an external library.
+Bootstrap CSS was excluded from validation, as it is an external library and not part of the developer’s custom code.
 
 ![CSS Testing](documenation/css-testing.PNG)
 
+## Browser Testing
+
+The application was tested on the following browsers:
+
+- Google Chrome
+- Microsoft Edge
+- Brave
+
+All functionality worked as expected across tested browsers.
 
 ### Bugs
 

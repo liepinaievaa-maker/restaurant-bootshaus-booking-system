@@ -143,7 +143,7 @@ Wireframes were created during planning to guide the structure of the main pages
 
 ### Responsive Design Testing
 
-- The application was tested on different screen sizes using browser developer tools. The layout remained usable on mobile, tablet, and desktop screens.
+- The application was tested using browser developer tools across multiple screen sizes including mobile, tablet, and desktop to ensure responsiveness.
 
 ## Features
 
