@@ -75,6 +75,8 @@
  - Manage customer reservations
  - Receive contact messages from users
 
+![User stories in GitHub](documenation/Board.PNG)
+
 ## Agile Development
 
 This project was planned and managed using GitHub Projects. The board was organised using Epics, User Stories, and Tasks.
