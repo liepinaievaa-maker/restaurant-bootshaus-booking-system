@@ -1,6 +1,9 @@
-# Restaurant bootshaus booking system
 
-## Project Overwiev
+# Restaurant Bootshaus booking system
+
+Project developer: <strong>Ieva Liepina</strong>
+
+## Project Overwiew
 
  - Bootshaus Restaurant Booking System is a web application that allows users to create, manage, and modify table reservations online. The platform is designed to simplify the booking process for customers while providing restaurant staff with an efficient way to manage reservations.
 
@@ -15,18 +18,18 @@
  - [Here is a link to my deployment](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
 
 ## Table of Contents
-- Project Overview
-- User Experience
-- Agile Development
-- Design
-- Features
-- Data Model
-- Technologies Used
-- Testing
-- Bugs
-- Deployment
-- Credits
-- Acknowledgements
+- [Project Overview](#project-overview)
+- [User Experience](#user-experience-ux)
+- [Agile Development](#agile-development)
+- [Design](#design)
+- [Features](#features)
+- [Data Model](#data-model)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)
 
@@ -95,9 +98,13 @@ The project was structured using:
 
 Each user story included acceptance criteria and was broken down into smaller implementation tasks for development.
 
-Due to the iterative nature of the project, not all user stories were completed at first, but the most important features were prioritised and completed within the project timeframe, as well the other tasks. All together I had about 40 User stories and tasks.
+Due to the iterative nature of the project, not all user stories were completed at first, but the most important features were prioritised and completed within the project timeframe, as well the other tasks. A total of approximately 40 user stories and tasks were created to guide the development process.
+
+- User stories were prioritised based on importance, with core booking functionality implemented first to ensure the application met its primary purpose.
 
 Screenshots below show examples of the project board, user stories, and task progression throughout development. 
+
+- [User stories can be viewed here](https://github.com/users/liepinaievaa-maker/projects/9/views/1)
 
 ![User stories in GitHub](documenation/Board.PNG)
 
@@ -108,6 +115,11 @@ Screenshots below show examples of the project board, user stories, and task pro
 ![Task guest number validation](documenation/task-guest-number-validation.PNG)
 
 ## Design
+
+### UX Design
+
+- The application was designed with a focus on simplicity and usability. Users can easily navigate the site, understand its purpose, and perform actions such as booking a table or contacting the restaurant with minimal effort. 
+- The layout follows common web design patterns, ensuring familiarity and ease of use.
 
 ### Colour Scheme
 
