@@ -77,6 +77,7 @@
 - Users can log in and log out securely
 - Only authenticated users can create bookings
 - Booking pages are protected using login-required access
+- Users are required to log in before making a booking so that each reservation can be linked to the correct account. This allows users to view, edit, and delete only their own bookings and prevents unauthorised access to other users reservation data.
 
 ### Booking System
 
@@ -218,6 +219,23 @@ All tests ran successfully with the following result:
 | Responsiveness | View pages on different screen sizes | Layout remains usable and responsive | Works as expected | Pass |
 | Deployment | Open deployed Heroku site | Live site loads correctly | Works as expected | Pass |
 
+## Code Validation
+
+- Python code was checked against PEP8 using [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+(here comes the screenshots)
+
+
+- Python docstrings were written with reference to [PEP257](https://peps.python.org/pep-0257/).
+
+(here comes the screenshots)
+
+- HTML pages were checked using the [W3C HTML Validator](https://validator.w3.org/).
+
+(here comes the screenshots)
+
+
+
 ### Bugs
 
 - Minor UI issues were identified and resolved during testing  
@@ -265,8 +283,18 @@ The live application can be accessed here:
 
 ## Credits
 
+- [Code Institute workspace setup documentation](https://code-institute-students.github.io/codeanywhere-docs/workspace-setup/) was used as a reference for project environment setup.
+
+
 ### Content
 
 All project content was created by the developer.
 
 ### Code
+
+
+- [Django Documentation](https://docs.djangoproject.com/) was used as a reference for models, views, forms, authentication, and URL routing.
+- [Bootstrap Documentation](https://getbootstrap.com/docs/) was used as a reference for layout, responsive design, navbar, buttons, tables, and form styling.
+- [WhiteNoise Documentation](https://whitenoise.readthedocs.io/) was used as a reference for serving static files in production.
+- [Heroku Dev Center](https://devcenter.heroku.com/) was used as a reference for deployment configuration.
+- [Code Institute Workspace Setup Documentation](https://code-institute-students.github.io/codeanywhere-docs/workspace-setup/) was used as a reference for environment setup.
