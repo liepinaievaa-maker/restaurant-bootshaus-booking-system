@@ -139,7 +139,6 @@
 ### Frameworks and Libraries
 
 - [Django](https://www.djangoproject.com/) – Web framework used to build the application
-Bootstrap – Used for styling and responsive design
 - [Bootstrap](https://getbootstrap.com/) – Used for styling and responsive design
 - [WhiteNoise](https://whitenoise.readthedocs.io/) – Used to serve static files in production
 - [Gunicorn](https://gunicorn.org/) – WSGI server used for deployment
@@ -198,7 +197,7 @@ All tests ran successfully with the following result:
 
 ### Manual Testing
 
-|Feature|Test|Expected Result|Actual Result|Pass/Fail|
+| Feature | Test | Expected Result | Actual Result | Pass/Fail |
 |---------|------|------------------|--------------|-----------|
 | Navigation | Click Home link | User is taken to homepage | Works as expected | Pass |
 | Navigation | Click Book link while logged out | User is redirected to login page | Works as expected | Pass |
@@ -250,9 +249,9 @@ The live application can be accessed here:
 <br>
 
 1. Clone the repository:
-- git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+- git clone https://github.com/liepinaievaa-maker/restaurant-bootshaus-booking-system.git
 2. Navigate into the project folder:
-- cd YOUR-REPO-NAME
+- cd restaurant-bootshaus-booking-system
 3. Create a virtual environment:
 - python -m venv venv
 4. Activate the virtual environment:
