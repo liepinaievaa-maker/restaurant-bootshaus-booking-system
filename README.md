@@ -125,6 +125,25 @@ Screenshots below show examples of the project board, user stories, and task pro
 
 - The site uses a dark navigation bar with light buttons and neutral Bootstrap styling to create a clean restaurant-style interface. The design keeps the focus on booking functionality and restaurant imagery.
 
+The used colour scheme:
+
+- Primary (buttons)
+#0d6efd
+- Dark navbar / footer
+#212529
+- Background
+#ffffff
+- Text
+#000000
+- Error messages
+#dc3545
+- Success messages
+#198754
+
+![My color Palette](documenation/color-pallete.PNG)
+
+-To Create Color palete I used [Coolors Website](https://coolors.co/0d6efd-212529-ffffff-dc3545-198754)
+
 ### Typography
 
 - The project uses default Bootstrap typography to maintain readability and consistency across pages.
