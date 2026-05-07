@@ -1,9 +1,11 @@
 
 # Restaurant Bootshaus booking system
 
+![Mockup](documenation/mockup.png)
+
 Project developer: <strong>Ieva Liepina</strong>
 
-## Project Overwiew
+## Project Overview
 
  - Bootshaus Restaurant Booking System is a web application that allows users to create, manage, and modify table reservations online. The platform is designed to simplify the booking process for customers while providing restaurant staff with an efficient way to manage reservations.
 
@@ -175,6 +177,8 @@ Wireframes were created during planning to guide the structure of the main pages
 - Links to Home, Book Table, Contact, Login, and Sign Up
 - Dynamic navigation options based on user authentication
 
+![Navbar](documenation/navbar.PNG)
+
 ### User Authentication
 
 - Users can register an account
@@ -182,6 +186,8 @@ Wireframes were created during planning to guide the structure of the main pages
 - Only authenticated users can create bookings
 - Booking pages are protected using login-required access
 - Users are required to log in before making a booking so that each reservation can be linked to the correct account. This allows users to view, edit, and delete only their own bookings and prevents unauthorised access to other users reservation data.
+
+![Log In](documenation/login.PNG)
 
 ### Booking System
 
@@ -191,12 +197,16 @@ Wireframes were created during planning to guide the structure of the main pages
 - Each time slot allows a maximum of 3 bookings
 - Guest numbers are limited between 1 and 10
 
+![Booking Table](documenation/booking.PNG)
+
 ### Booking Management
 
 - Users can view their bookings
 - Users can edit existing bookings
 - Users can delete bookings
 - Bookings are filtered per user
+
+![My bookings](documenation/my-bookings.PNG)
 
 ### Validation and Error Handling
 
@@ -213,11 +223,15 @@ Wireframes were created during planning to guide the structure of the main pages
 - Messages are stored in the database
 - Admin can view contact requests
 
+![Contact Form](documenation/contact-form.PNG)
+
 ### Admin Panel
 
 - Admin can view and manage all bookings
 - Admin can view contact messages
 - Admin has full control over booking data
+
+![Admin Panel](documenation/admin-panel.PNG)
 
 ### User Feedback
 
@@ -227,6 +241,8 @@ Wireframes were created during planning to guide the structure of the main pages
 - Editing bookings
 - Deleting bookings
 - Sending contact messages
+
+![Success message](documenation/success-message.PNG)
 
 ### Responsive Design
 
