@@ -299,7 +299,7 @@ The footer includes:
 
 - Built with Bootstrap for responsive layout
 - Works across different screen sizes
-- The website was tested using browser developer tools at mobile, tablet, and desktop screen sizs. Bootstrap grid classes and responsive navigation were used to ensure the layout adapts across devices. The homepage image gallery stacks on smaller screens, the navigation collapses into a mobile menu, and booking tables remain usable through responsive table wrapping.
+- The website was tested using browser developer tools at mobile, tablet, and desktop screen sizes. Bootstrap grid classes and responsive navigation were used to ensure the layout adapts across devices. The homepage image gallery stacks on smaller screens, the navigation collapses into a mobile menu, and booking tables remain usable through responsive table wrapping.
 
 ## Data Model
 
