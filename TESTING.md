@@ -24,7 +24,7 @@ All tests ran successfully with the following result:
 
     - OK
 
-![VS Code Testing](documenation/vs-code-testing.PNG)
+![VS Code Testing](documentation/vs-code-testing.PNG)
 
 ### Manual Testing
 
@@ -85,15 +85,24 @@ Files checked:
 
 Screenshots of validation results are included below.
 
-![Python models testing](documenation/python-testing-bookings-models.PNG)
-![Python forms testing](documenation/python-testing-forms.PNG)
-![Python views testing](documenation/python-testing-views.PNG)
-![Python admin testing](documenation/python-testing-admin.PNG)
-![Python tests testing](documenation/python-testing-test.PNG)
-![Python settings testing](documenation/python-testing-settings.PNG)
-![Python urls testing](documenation/python-testing-urls.PNG)
-![Python asgi testing](documenation/python-testing-asgy.PNG)
-![Python wsgi testing](documenation/python-testing-wsgi.PNG)
+- bookings/models.py
+![Python models testing](documentation/python-testing-bookings-models.PNG)
+- bookings/forms.py
+![Python forms testing](documentation/python-testing-forms.PNG)
+- bookings/views.py
+![Python views testing](documentation/python-testing-views.PNG)
+-  bookings/admin.py
+![Python admin testing](documentation/python-testing-admin.PNG)
+- bookings/tests.py
+![Python tests testing](documentation/python-testing-test.PNG)
+- bootshaus/settings.py
+![Python settings testing](documentation/python-testing-settings.PNG)
+- bootshaus/urls.py
+![Python urls testing](documentation/python-testing-urls.PNG)
+- bootshaus/asgi.py
+![Python asgi testing](documentation/python-testing-asgy.PNG)
+- bootshaus/wsgi.py
+![Python wsgi testing](documentation/python-testing-wsgi.PNG)
 
 ---
 
@@ -110,10 +119,10 @@ Pages tested:
 - My Bookings
 - Contact
 
-![HTML Home Page testing](documenation/html-testing-home-page.PNG)
-![HTML Log Inn testing](documenation/html-testing-account.PNG)
-![HTML Contact Form Testing](documenation/html-testing-contact-form.PNG)
-![HTML Sign Up Form Testing](documenation/html-testing-sign-up-form.PNG)
+![HTML Home Page testing](documentation/html-testing-home-page.PNG)
+![HTML Log Inn testing](documentation/html-testing-account.PNG)
+![HTML Contact Form Testing](documentation/html-testing-contact-form.PNG)
+![HTML Sign Up Form Testing](documentation/html-testing-sign-up-form.PNG)
 
 ---
 
@@ -127,7 +136,7 @@ No errors were found in the custom CSS.
 
 Bootstrap CSS was excluded from validation, as it is an external library and not part of the developer’s custom code.
 
-![CSS Testing](documenation/css-testing.PNG)
+![CSS Testing](documentation/css-testing.PNG)
 
 ## Browser Testing
 
@@ -151,4 +160,4 @@ All functionality worked as expected across tested browsers.
 
 #### Remaining Bugs
 
-- No major bugs remain at the time of submission.
+- No known major bugs remain at the time of submission.

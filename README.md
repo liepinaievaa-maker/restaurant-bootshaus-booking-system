@@ -1,7 +1,7 @@
 
 # Restaurant Bootshaus booking system
 
-![Mockup](documenation/mockup.png)
+![Mockup](documentation/mockup.png)
 
 Project developer: <strong>Ieva Liepina</strong>
 
@@ -17,7 +17,7 @@ Project developer: <strong>Ieva Liepina</strong>
 
 <br>
 
- - [Live Application](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
+  [Live Application](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
  (Ctrl + click to open in new tab)
 
 ## Table of Contents
@@ -134,13 +134,13 @@ Screenshots below show examples of the project board, user stories, and task pro
 
 - [User stories can be viewed here](https://github.com/users/liepinaievaa-maker/projects/9/views/1)
 
-![User stories in GitHub](documenation/Board.PNG)
+![User stories in GitHub](documentation/Board.PNG)
 
-![User stories edit bokking](documenation/user-story-edit-booking.PNG)
+![User stories edit bokking](documentation/user-story-edit-booking.PNG)
 
-![User stories register user](documenation/user-story-register-account.PNG)
+![User stories register user](documentation/user-story-register-account.PNG)
 
-![Task guest number validation](documenation/task-guest-number-validation.PNG)
+![Task guest number validation](documentation/task-guest-number-validation.PNG)
 
 ### User Stories Achieved
 
@@ -178,7 +178,7 @@ The used colour scheme:
 
 - The palette creates a clean and modern interface while maintaining strong contrast and readability.
 
-![My color Palette](documenation/color-pallete.PNG)
+![My color Palette](documentation/color-pallete.PNG)
 
 - To Create Color palete developer used [Coolors Website](https://coolors.co/0d6efd-212529-ffffff-dc3545-198754)
 
@@ -198,7 +198,7 @@ Wireframes were created during planning to guide the structure of the main pages
 - My Bookings page
 - Contact page
 
-![Wireframes](documenation/wireframe.png)
+![Wireframes](documentation/wireframe.png)
 
 ### Responsive Design Testing
 
@@ -212,7 +212,7 @@ Wireframes were created during planning to guide the structure of the main pages
 - Links to Home, Book Table, Contact, Login, and Sign Up
 - Dynamic navigation options based on user authentication
 
-![Navbar](documenation/navbar.PNG)
+![Navbar](documentation/navbar.PNG)
 
 ### Footer
 
@@ -227,7 +227,7 @@ The footer includes:
 
 - The footer was built using Bootstrap utility classes to maintain responsiveness and consistent spacing.
 
-![Footer](documenation/footer.PNG)
+![Footer](documentation/footer.PNG)
 
 ### User Authentication
 
@@ -237,7 +237,7 @@ The footer includes:
 - Booking pages are protected using login-required access
 - Users are required to log in before making a booking so that each reservation can be linked to the correct account. This allows users to view, edit, and delete only their own bookings and prevents unauthorised access to other users reservation data.
 
-![Log In](documenation/login.PNG)
+![Log In](documentation/login.PNG)
 
 ### Booking System
 
@@ -247,7 +247,7 @@ The footer includes:
 - Each time slot allows a maximum of 3 bookings
 - Guest numbers are limited between 1 and 10
 
-![Booking Table](documenation/booking.PNG)
+![Booking Table](documentation/booking.PNG)
 
 ### Booking Management
 
@@ -256,7 +256,7 @@ The footer includes:
 - Users can delete bookings
 - Bookings are filtered per user
 
-![My bookings](documenation/my-bookings.PNG)
+![My bookings](documentation/my-bookings.PNG)
 
 ### Validation and Error Handling
 
@@ -273,7 +273,7 @@ The footer includes:
 - Messages are stored in the database
 - Admin can view contact requests
 
-![Contact Form](documenation/contact-form.PNG)
+![Contact Form](documentation/contact-form.PNG)
 
 ### Admin Panel
 
@@ -281,7 +281,7 @@ The footer includes:
 - Admin can view contact messages
 - Admin has full control over booking data
 
-![Admin Panel](documenation/admin-panel.PNG)
+![Admin Panel](documentation/admin-panel.PNG)
 
 ### User Feedback
 
@@ -292,7 +292,7 @@ The footer includes:
 - Deleting bookings
 - Sending contact messages
 
-![Success message](documenation/success-message.PNG)
+![Success message](documentation/success-message.PNG)
 
 ### Responsive Design
 
@@ -306,7 +306,7 @@ The footer includes:
 
 The following database schema diagram shows the structure of the models used in the application and the relationship between the Django User model and the Booking model.
 
-![Database Schema](documenation/database-schema.PNG)
+![Database Schema](documentation/database-schema.PNG)
 
 ### Booking Model
 
@@ -339,6 +339,7 @@ Fields:
 ### Languages
 
 - Python
+- JavaScript
 - HTML
 - CSS
 
