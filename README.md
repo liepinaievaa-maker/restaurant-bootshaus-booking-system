@@ -88,20 +88,22 @@ The application was designed with accessibility in mind by:
 
 - Using semantic HTML structure
 - Maintaining clear navigation
-- Using responsive layouts
+- Using Bootstrap responsive layouts
 - Providing sufficient colour contrast
-- Adding form labels and validation feedback
+- Adding validation feedback for forms
+- Including descriptive labels for form inputs
 - Including the `lang="en"` attribute in the HTML document
 
 ## Security Features
 
 The project includes several security features:
 
-- User authentication and login protection
+- User authentication and and authorisation using Django Authentication System
+- Login protection for booking functionality
 - CSRF protection provided by Django
-- Restricted booking access for authenticated users
 - Users can only edit or delete their own bookings
 - Secret keys and environment variables stored securely using Heroku Config Vars
+- DEBUG mode disabled in production
 
 
 ## Agile Development
@@ -191,10 +193,9 @@ Wireframes were created during planning to guide the structure of the main pages
 
 ### Responsive Design Testing
 
-- The application was tested using browser developer tools across multiple screen sizes including mobile, tablet, and desktop to ensure responsiveness.
+- The application was tested using browser developer tools across multiple screen sizes including mobile, tablet, and desktop to ensure responsiveness and usability.
 
 ## Features
-
 
 ### Navigation
 
@@ -291,6 +292,12 @@ The footer includes:
 - The website was tested using browser developer tools at mobile, tablet, and desktop screen sizs. Bootstrap grid classes and responsive navigation were used to ensure the layout adapts across devices. The homepage image gallery stacks on smaller screens, the navigation collapses into a mobilemenu, and booking tables remain usable through responsive table wrappig.
 
 ## Data Model
+
+### Database Schema
+
+The following database schema diagram shows the structure of the models used in the application and the relationship between the Django User model and the Booking model.
+
+![Database Schema](documenation/database-schema.PNG)
 
 ### Booking Model
 
