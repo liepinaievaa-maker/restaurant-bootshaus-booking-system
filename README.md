@@ -358,6 +358,7 @@ Fields:
 - Django Messages Framework – For displaying success and error messages
 - Django Authentication System – For user login, logout, and registration
 - [Canva](https://www.canva.com/) – Used for creating wireframes, mockups, and visual documentation to support UX planning and responsive design presentation.
+- [dbdiagram.io](https://dbdiagram.io/) – Used to create the database schema diagram for visualising model relationships and application data structure.
 
 ### Future Features
 

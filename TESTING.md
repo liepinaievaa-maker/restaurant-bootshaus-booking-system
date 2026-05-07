@@ -24,6 +24,7 @@ All tests ran successfully with the following result:
 
     - OK
 
+![VS Code Testing](documenation/vs-code-testing.PNG)
 
 ### Manual Testing
 
