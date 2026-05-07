@@ -24,7 +24,7 @@ Project developer: <strong>Ieva Liepina</strong>
 - [Project Overview](#project-overview)
 - [User Experience](#user-experience-ux)
 - [Accessibility](#accessibility)
-- [Security Feautures](#security-features)
+- [Security Features](#security-features)
 - [Agile Development](#agile-development)
 - [Design](#design)
 - [Features](#features)
@@ -99,7 +99,7 @@ The application was designed with accessibility in mind by:
 
 The project includes several security features:
 
-- User authentication and and authorisation using Django Authentication System
+- User authentication and authorisation using Django Authentication System
 - Login protection for booking functionality
 - CSRF protection provided by Django
 - Users can only edit or delete their own bookings
@@ -111,7 +111,7 @@ The project includes several security features:
 
 This project was planned and managed using GitHub Projects following Agile methodology. 
 
-The Kanban board was used to organise development into the following coumns:
+The Kanban board was used to organise development into the following columns:
 
 - Backlog
 - To Do
@@ -136,7 +136,7 @@ Screenshots below show examples of the project board, user stories, and task pro
 
 ![User stories in GitHub](documentation/Board.PNG)
 
-![User stories edit bokking](documentation/user-story-edit-booking.PNG)
+![User stories edit booking](documentation/user-story-edit-booking.PNG)
 
 ![User stories register user](documentation/user-story-register-account.PNG)
 
@@ -180,7 +180,7 @@ The used colour scheme:
 
 ![My color Palette](documentation/color-pallete.PNG)
 
-- To Create Color palete developer used [Coolors Website](https://coolors.co/0d6efd-212529-ffffff-dc3545-198754)
+- To Create Color palette developer used [Coolors Website](https://coolors.co/0d6efd-212529-ffffff-dc3545-198754)
 
 ### Typography
 
@@ -203,6 +203,7 @@ Wireframes were created during planning to guide the structure of the main pages
 ### Responsive Design Testing
 
 - The application was tested using browser developer tools across multiple screen sizes including mobile, tablet, and desktop to ensure responsiveness and usability.
+
 
 ## Features
 
@@ -298,7 +299,7 @@ The footer includes:
 
 - Built with Bootstrap for responsive layout
 - Works across different screen sizes
-- The website was tested using browser developer tools at mobile, tablet, and desktop screen sizs. Bootstrap grid classes and responsive navigation were used to ensure the layout adapts across devices. The homepage image gallery stacks on smaller screens, the navigation collapses into a mobilemenu, and booking tables remain usable through responsive table wrappig.
+- The website was tested using browser developer tools at mobile, tablet, and desktop screen sizs. Bootstrap grid classes and responsive navigation were used to ensure the layout adapts across devices. The homepage image gallery stacks on smaller screens, the navigation collapses into a mobile menu, and booking tables remain usable through responsive table wrapping.
 
 ## Data Model
 
@@ -354,7 +355,6 @@ Fields:
 
 - SQLite (development)
 - PostgreSQL (production on Heroku)
-- WhiteNoise – For serving static files in production
 
 ### Tools and Platforms
 
@@ -413,7 +413,22 @@ Full testing documentation can be found in [TESTING.md](TESTING.md).
 
 The live application can be accessed here:
 
- - [Here is a link to my deployment](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
+ - [Live Application](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
+
+### Environment Variables
+
+- The following environment variables were configured in Heroku Config Vars:
+
+ - SECRET_KEY = your_secret_key
+ - DEBUG = False
+ - DATABASE_URL = PostgreSQL database URL
+
+These variables are used to:
+
+- Protect sensitive application settings
+- Connect the application to the production database
+- Disable debug mode in production
+
 
 ## Local Deployment
 
