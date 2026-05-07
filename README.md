@@ -164,6 +164,8 @@ Wireframes were created during planning to guide the structure of the main pages
 - My Bookings page
 - Contact page
 
+![Wireframes](documenation/wireframe.png)
+
 ### Responsive Design Testing
 
 - The application was tested using browser developer tools across multiple screen sizes including mobile, tablet, and desktop to ensure responsiveness.
@@ -178,6 +180,21 @@ Wireframes were created during planning to guide the structure of the main pages
 - Dynamic navigation options based on user authentication
 
 ![Navbar](documenation/navbar.PNG)
+
+### Footer
+
+The footer is displayed across all pages and provides a consistent ending section for the application layout.
+
+The footer includes:
+- Copyright information
+- Consistent dark styling matching the navigation bar
+- Responsive positioning across desktop and mobile devices
+
+- The footer helps maintain visual consistency throughout the application and improves overall user experience by creating a structured page layout.
+
+- The footer was built using Bootstrap utility classes to maintain responsiveness and consistent spacing.
+
+![Footer](documenation/footer.PNG)
 
 ### User Authentication
 
@@ -310,6 +327,7 @@ Fields:
 
 - Django Messages Framework – For displaying success and error messages
 - Django Authentication System – For user login, logout, and registration
+- [Canva](https://www.canva.com/) – Used for creating wireframes, mockups, and visual documentation to support UX planning and responsive design presentation.
 
 ### Future Features
 
