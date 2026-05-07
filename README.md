@@ -17,7 +17,7 @@ Project developer: <strong>Ieva Liepina</strong>
 
 <br>
 
- - [Here is a link to my deployment](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
+ - [Live Application](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -140,6 +140,14 @@ Screenshots below show examples of the project board, user stories, and task pro
 ![User stories register user](documenation/user-story-register-account.PNG)
 
 ![Task guest number validation](documenation/task-guest-number-validation.PNG)
+
+### User Stories Achieved
+
+- Users can register and log in
+- Users can create bookings
+- Users can edit and delete their own bookings
+- Admin can manage reservations
+- Users can contact the restaurant
 
 ## Design
 
@@ -372,6 +380,20 @@ Future improvements for the project may include:
 - Enhance admin controls for reservation management
 
 ## Testing
+
+The application was manually tested across multiple devices and screen sizes.
+
+Features tested include:
+
+- User registration
+- User login/logout
+- Booking creation
+- Booking editing
+- Booking deletion
+- Contact form submission
+- Admin management
+- Form validation
+- Responsive navigation
 
 Full testing documentation can be found in [TESTING.md](TESTING.md).
 
