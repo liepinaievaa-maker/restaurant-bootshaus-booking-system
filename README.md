@@ -18,6 +18,7 @@ Project developer: <strong>Ieva Liepina</strong>
 <br>
 
  - [Live Application](https://restaurant-bootshaus-af7c610c2e01.herokuapp.com/)
+ (Ctrl + click to open in new tab)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
