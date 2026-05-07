@@ -22,6 +22,8 @@ Project developer: <strong>Ieva Liepina</strong>
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [User Experience](#user-experience-ux)
+- [Accessibility](#accessibility)
+- [Security Feautures](#security-features)
 - [Agile Development](#agile-development)
 - [Design](#design)
 - [Features](#features)
@@ -79,6 +81,27 @@ Project developer: <strong>Ieva Liepina</strong>
  - View all bookings in the admin panel
  - Manage customer reservations
  - Receive contact messages from users
+
+## Accessibility
+
+The application was designed with accessibility in mind by:
+
+- Using semantic HTML structure
+- Maintaining clear navigation
+- Using responsive layouts
+- Providing sufficient colour contrast
+- Adding form labels and validation feedback
+- Including the `lang="en"` attribute in the HTML document
+
+## Security Features
+
+The project includes several security features:
+
+- User authentication and login protection
+- CSRF protection provided by Django
+- Restricted booking access for authenticated users
+- Users can only edit or delete their own bookings
+- Secret keys and environment variables stored securely using Heroku Config Vars
 
 
 ## Agile Development
@@ -331,10 +354,14 @@ Fields:
 
 ### Future Features
 
-- Add review system for customers  
-- Improve booking system with table selection  
-- Add email notifications for bookings  
-- Enhance admin controls for reservation management  
+Future improvements for the project may include:
+
+- Add review system for customers
+- Uploading images with reviews
+- Improve booking system with table selection
+- Booking reminders and notifications
+- Email confirmation for bookings
+- Enhance admin controls for reservation management
 
 ## Testing
 
@@ -388,9 +415,15 @@ All project content was created by the developer.
 
 ### Code
 
-
 - [Django Documentation](https://docs.djangoproject.com/) was used as a reference for models, views, forms, authentication, and URL routing.
 - [Bootstrap Documentation](https://getbootstrap.com/docs/) was used as a reference for layout, responsive design, navbar, buttons, tables, and form styling.
 - [WhiteNoise Documentation](https://whitenoise.readthedocs.io/) was used as a reference for serving static files in production.
 - [Heroku Dev Center](https://devcenter.heroku.com/) was used as a reference for deployment configuration.
 - [Code Institute Workspace Setup Documentation](https://code-institute-students.github.io/codeanywhere-docs/workspace-setup/) was used as a reference for environment setup.
+
+
+## Acknowledgements
+
+- My mentor for project guidance and feedback
+- Code Institute for learning resources and project support
+- Django and Bootstrap documentation
